@@ -15,9 +15,9 @@ public class HelloWorldServlet extends HttpServlet {
         String name = request.getParameter("name");
         System.out.println("name parameter= " + name);
         if (name == null) {
-            out.println("<strong> Hello </strong>");
+            out.println("<strong> Hello World </strong> " );
         } else {
-            out.println("<strong> Hello World </strong>");
+            out.println("<strong> Hello " + name + "</strong>");
         }
     }
 
