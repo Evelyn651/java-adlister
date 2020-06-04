@@ -31,6 +31,10 @@
 <h2>Expression Language</h2>
 <%--Expression Language--%>
 <p>User-Agent header: ${header["user-agent"]}</p>
+<p>"page_no" parameter: ${param.page_no}</p>
+
+<% request.setAttribute("name", "evelyn"); %>
+<p>Hello ${name}!</p>
 
 <%@ include file="partials/thebestfooterever.jsp" %>
 </body>
